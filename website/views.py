@@ -22,3 +22,5 @@ def projects(request):
 
 def contact(request):
     return render(request, 'website/contact.html')
+
+
