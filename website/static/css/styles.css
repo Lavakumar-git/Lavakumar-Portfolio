@@ -29,16 +29,48 @@ body {
 .navbar-brand {
   font-size: 1.4rem;
   letter-spacing: 1px;
+  margin-right: auto;
+}
+
+.navbar-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .nav-link {
   color: #ffffff !important;
   margin-left: 15px;
   transition: 0.3s;
+  white-space: nowrap;
 }
 
 .nav-link:hover {
   color: #38bdf8 !important;
+}
+
+/* Mobile: Keep navbar items horizontal */
+@media (max-width: 768px) {
+  .custom-navbar {
+    padding: 12px 0;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+    margin-right: 15px;
+  }
+
+  .navbar-menu {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 5px;
+  }
+
+  .nav-link {
+    margin-left: 8px;
+    font-size: 0.9rem;
+    padding: 5px 8px !important;
+  }
 }
 
 /* =========================
